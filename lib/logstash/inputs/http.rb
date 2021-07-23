@@ -143,7 +143,7 @@ class LogStash::Inputs::Http < LogStash::Inputs::Base
           decorate(event)
           queue << event
         end
-        ['200', @response_headers, ['successful']]
+        ['200', @response_headers, ['successfully!']]
       rescue => e
         @logger.error(
           "unable to process event.", 
